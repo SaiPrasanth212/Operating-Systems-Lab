@@ -1,0 +1,14 @@
+echo "Enter the salary of an employee" 
+read salary 
+if [ $salary -lt 1500 ] 
+then 
+ hra=`expr $salary \* 10 / 100` 
+ da=`expr $salary \* 90 / 100` 
+elif [ $salary -ge 1500 ] 
+then 
+ hra=500 
+ da=`expr $salary \* 98 / 100` 
+fi 
+echo "For the Salary of Rs.$salary" 
+echo "HRA is Rs.$hra" 
+echo "DA is Rs.$da"

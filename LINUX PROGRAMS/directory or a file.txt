@@ -1,0 +1,14 @@
+if ! [ -e "$1" ]
+then
+echo "File does not exist, try again"
+exit
+fi
+if [ -f $1 ]
+then
+echo "$1 is a File"
+elif [ -d $1 ]
+then
+echo "$1 is a Directory"
+else
+echo "Not a file neither a directory"
+fi3
